@@ -1,0 +1,16 @@
+{
+  "name": "獨自升級系統 · 十職技能樹",
+  "short_name": "獨自升級",
+  "description": "十職業多職養成 RPG，120 個能力技能節點、修煉紀錄、成就與稱號升級。",
+  "lang": "zh-TW",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1018",
+  "theme_color": "#0b1018",
+  "orientation": "any",
+  "icons": [
+    {"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}

@@ -1,0 +1,1915 @@
+{
+  "version": 1,
+  "professions": [
+    {
+      "id": "engineering",
+      "name": "機械工程師",
+      "icon": "⚙️",
+      "color": "#74c2e2",
+      "desc": "以結構、製造、驗證與系統整合把構想變成可靠的產品。",
+      "attribute": "結構力",
+      "ranks": [
+        "機械學徒",
+        "製圖技師",
+        "機構工程師",
+        "資深開發工程師",
+        "系統整合專家",
+        "首席機構架構師",
+        "機械技術宗師",
+        "工程領域權威",
+        "萬象造物主"
+      ],
+      "branches": [
+        "結構設計",
+        "製程驗證",
+        "伺服器系統"
+      ],
+      "skills": [
+        {
+          "id": "engineering-0-0",
+          "name": "工程圖基礎",
+          "desc": "識圖、投影、尺寸配置與設計意圖傳達。",
+          "task": "完成一張含三視圖與尺寸的零件圖。",
+          "stage": 0,
+          "row": 0,
+          "requires": []
+        },
+        {
+          "id": "engineering-0-1",
+          "name": "CAD與建模",
+          "desc": "建立可修改的參數模型與組立關係。",
+          "task": "用 CAD 建立包含至少五個零件的組立。",
+          "stage": 1,
+          "row": 0,
+          "requires": [
+            {
+              "id": "engineering-0-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "engineering-0-2",
+          "name": "公差鏈與GD&T",
+          "desc": "分析功能尺寸、公差堆疊與基準系。",
+          "task": "完成一組 worst-case 或 RSS 公差分析。",
+          "stage": 2,
+          "row": 0,
+          "requires": [
+            {
+              "id": "engineering-0-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "engineering-0-3",
+          "name": "系統架構設計",
+          "desc": "在成本、重量、可維修性間做整體決策。",
+          "task": "完成一份含設計取捨的完整機構方案。",
+          "stage": 3,
+          "row": 0,
+          "requires": [
+            {
+              "id": "engineering-0-2",
+              "level": 4
+            },
+            {
+              "id": "engineering-1-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "engineering-1-0",
+          "name": "材料與加工",
+          "desc": "掌握金屬、塑膠與加工限制。",
+          "task": "比較兩種材料及其製程適用性。",
+          "stage": 0,
+          "row": 1,
+          "requires": []
+        },
+        {
+          "id": "engineering-1-1",
+          "name": "DFM與組裝",
+          "desc": "辨識量產風險、裝配順序與治具需求。",
+          "task": "找出一項設計的五個 DFM 問題。",
+          "stage": 1,
+          "row": 1,
+          "requires": [
+            {
+              "id": "engineering-1-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "engineering-1-2",
+          "name": "測試與可靠度",
+          "desc": "規劃試驗、失效判準與根因分析。",
+          "task": "製作一份有量測數據的驗證計畫。",
+          "stage": 2,
+          "row": 1,
+          "requires": [
+            {
+              "id": "engineering-1-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "engineering-1-3",
+          "name": "量產良率優化",
+          "desc": "分析製程能力、異常閉環及成本改善。",
+          "task": "提出一個具體的良率改善方案。",
+          "stage": 3,
+          "row": 1,
+          "requires": [
+            {
+              "id": "engineering-1-2",
+              "level": 4
+            },
+            {
+              "id": "engineering-2-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "engineering-2-0",
+          "name": "熱流與散熱",
+          "desc": "理解風道、熱傳與散熱設計邊界。",
+          "task": "拆解一台伺服器的散熱路徑。",
+          "stage": 0,
+          "row": 2,
+          "requires": []
+        },
+        {
+          "id": "engineering-2-1",
+          "name": "Cable與EMI",
+          "desc": "整合線材彎折半徑、干涉與電磁要求。",
+          "task": "畫出具固定點與維修路徑的配線圖。",
+          "stage": 1,
+          "row": 2,
+          "requires": [
+            {
+              "id": "engineering-2-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "engineering-2-2",
+          "name": "機櫃與OCP",
+          "desc": "掌握機櫃接口、服務性與標準化配置。",
+          "task": "比較兩種伺服器機構架構。",
+          "stage": 2,
+          "row": 2,
+          "requires": [
+            {
+              "id": "engineering-2-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "engineering-2-3",
+          "name": "跨域系統整合",
+          "desc": "串接電、熱、機與供應鏈交付。",
+          "task": "完成一份跨部門設計審查清單。",
+          "stage": 3,
+          "row": 2,
+          "requires": [
+            {
+              "id": "engineering-2-2",
+              "level": 4
+            },
+            {
+              "id": "engineering-0-2",
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writer",
+      "name": "作家",
+      "icon": "✒️",
+      "color": "#e9b97e",
+      "desc": "以敘事工程、語言與觀點建構能被讀者記住的世界。",
+      "attribute": "創造力",
+      "ranks": [
+        "文字旅人",
+        "短篇習作者",
+        "獨立作者",
+        "長篇小說家",
+        "成熟敘事者",
+        "文學創作名家",
+        "敘事世界建構師",
+        "故事宗師",
+        "文字創世者"
+      ],
+      "branches": [
+        "故事架構",
+        "人物與文字",
+        "出版與IP"
+      ],
+      "skills": [
+        {
+          "id": "writer-0-0",
+          "name": "核心命題",
+          "desc": "提煉故事問題、主題及讀者承諾。",
+          "task": "寫出三則一句話故事提案。",
+          "stage": 0,
+          "row": 0,
+          "requires": []
+        },
+        {
+          "id": "writer-0-1",
+          "name": "三幕與節點",
+          "desc": "安排衝突、轉折與情緒節奏。",
+          "task": "完成一份三幕式故事大綱。",
+          "stage": 1,
+          "row": 0,
+          "requires": [
+            {
+              "id": "writer-0-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "writer-0-2",
+          "name": "多線敘事",
+          "desc": "處理伏筆、視角和時間線交錯。",
+          "task": "設計三條能在高潮匯合的情節線。",
+          "stage": 2,
+          "row": 0,
+          "requires": [
+            {
+              "id": "writer-0-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "writer-0-3",
+          "name": "長篇世界系統",
+          "desc": "建立有規則且可延伸的敘事宇宙。",
+          "task": "建立角色、世界觀與事件時間軸手冊。",
+          "stage": 3,
+          "row": 0,
+          "requires": [
+            {
+              "id": "writer-0-2",
+              "level": 4
+            },
+            {
+              "id": "writer-1-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "writer-1-0",
+          "name": "人物動機",
+          "desc": "設計慾望、恐懼與內部矛盾。",
+          "task": "寫一份人物小傳與核心傷口。",
+          "stage": 0,
+          "row": 1,
+          "requires": []
+        },
+        {
+          "id": "writer-1-1",
+          "name": "對話與潛台詞",
+          "desc": "用言外之意呈現性格與權力關係。",
+          "task": "寫一段不直說情感的雙人對話。",
+          "stage": 1,
+          "row": 1,
+          "requires": [
+            {
+              "id": "writer-1-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "writer-1-2",
+          "name": "文風與節奏",
+          "desc": "調控句長、意象、停頓與敘述密度。",
+          "task": "同一場景用兩種敘事節奏重寫。",
+          "stage": 2,
+          "row": 1,
+          "requires": [
+            {
+              "id": "writer-1-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "writer-1-3",
+          "name": "高階心理敘事",
+          "desc": "讓價值衝突與人物弧線自然咬合。",
+          "task": "寫一篇有道德兩難的完整短篇。",
+          "stage": 3,
+          "row": 1,
+          "requires": [
+            {
+              "id": "writer-1-2",
+              "level": 4
+            },
+            {
+              "id": "writer-2-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "writer-2-0",
+          "name": "文本修訂",
+          "desc": "從邏輯、語句及結構三層編修。",
+          "task": "完整修訂一章並記錄修改原因。",
+          "stage": 0,
+          "row": 2,
+          "requires": []
+        },
+        {
+          "id": "writer-2-1",
+          "name": "作品定位",
+          "desc": "分析讀者、題材、簡介與投稿路徑。",
+          "task": "寫一份 300 字投稿摘要。",
+          "stage": 1,
+          "row": 2,
+          "requires": [
+            {
+              "id": "writer-2-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "writer-2-2",
+          "name": "系列企劃",
+          "desc": "規劃連載、作品矩陣與長線品牌。",
+          "task": "設計三部曲作品企劃。",
+          "stage": 2,
+          "row": 2,
+          "requires": [
+            {
+              "id": "writer-2-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "writer-2-3",
+          "name": "跨媒體改編",
+          "desc": "把小說轉換為分鏡、劇本或動畫。",
+          "task": "改編一場戲成二頁劇本。",
+          "stage": 3,
+          "row": 2,
+          "requires": [
+            {
+              "id": "writer-2-2",
+              "level": 4
+            },
+            {
+              "id": "writer-0-2",
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "musician",
+      "name": "音樂家",
+      "icon": "🎼",
+      "color": "#b5a4ef",
+      "desc": "從樂理、耳朵、創作到製作，把感受變成可傳播的聲音。",
+      "attribute": "創造力",
+      "ranks": [
+        "節奏聆聽者",
+        "樂理學徒",
+        "旋律創作者",
+        "獨立作曲者",
+        "專業編曲家",
+        "原創音樂製作人",
+        "資深配樂師",
+        "聲音藝術宗師",
+        "萬籟譜寫者"
+      ],
+      "branches": [
+        "樂理與作曲",
+        "聽力與演奏",
+        "製作與發表"
+      ],
+      "skills": [
+        {
+          "id": "musician-0-0",
+          "name": "音階和弦",
+          "desc": "認識調性、節奏、音程與功能和聲。",
+          "task": "寫出八小節含和弦標記的旋律。",
+          "stage": 0,
+          "row": 0,
+          "requires": []
+        },
+        {
+          "id": "musician-0-1",
+          "name": "和聲進行",
+          "desc": "熟悉轉位、終止與調性張力。",
+          "task": "寫三組不同情緒的和聲進行。",
+          "stage": 1,
+          "row": 0,
+          "requires": [
+            {
+              "id": "musician-0-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "musician-0-2",
+          "name": "曲式與配器",
+          "desc": "設計主題、對比和器樂層次。",
+          "task": "編寫一段 A–B–A 曲式草稿。",
+          "stage": 2,
+          "row": 0,
+          "requires": [
+            {
+              "id": "musician-0-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "musician-0-3",
+          "name": "大型原創作品",
+          "desc": "將情緒弧線延伸為完整配樂或樂章。",
+          "task": "完成一首三分鐘以上原創作品。",
+          "stage": 3,
+          "row": 0,
+          "requires": [
+            {
+              "id": "musician-0-2",
+              "level": 4
+            },
+            {
+              "id": "musician-1-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "musician-1-0",
+          "name": "節拍穩定",
+          "desc": "建立內在節拍與基礎節奏感。",
+          "task": "節拍器下完成五種節奏型練習。",
+          "stage": 0,
+          "row": 1,
+          "requires": []
+        },
+        {
+          "id": "musician-1-1",
+          "name": "視唱練耳",
+          "desc": "辨識音程、調性與旋律。",
+          "task": "聽寫八小節旋律並自行核對。",
+          "stage": 1,
+          "row": 1,
+          "requires": [
+            {
+              "id": "musician-1-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "musician-1-2",
+          "name": "樂器表現",
+          "desc": "處理力度、發音與表演動態。",
+          "task": "錄製一段有動態對比的演奏。",
+          "stage": 2,
+          "row": 1,
+          "requires": [
+            {
+              "id": "musician-1-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "musician-1-3",
+          "name": "舞台詮釋",
+          "desc": "以技巧、情緒與即興形成個人語彙。",
+          "task": "完成一場 10 分鐘作品演出。",
+          "stage": 3,
+          "row": 1,
+          "requires": [
+            {
+              "id": "musician-1-2",
+              "level": 4
+            },
+            {
+              "id": "musician-2-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "musician-2-0",
+          "name": "DAW工作流",
+          "desc": "了解 MIDI、音軌與基礎訊號處理。",
+          "task": "建立十軌以上的可編輯專案。",
+          "stage": 0,
+          "row": 2,
+          "requires": []
+        },
+        {
+          "id": "musician-2-1",
+          "name": "錄音與混音",
+          "desc": "控制電平、EQ、空間與動態。",
+          "task": "混製一段有參考曲對比的作品。",
+          "stage": 1,
+          "row": 2,
+          "requires": [
+            {
+              "id": "musician-2-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "musician-2-2",
+          "name": "影像配樂",
+          "desc": "讓聲音與敘事節奏同步。",
+          "task": "為一分鐘無聲動畫編寫配樂。",
+          "stage": 2,
+          "row": 2,
+          "requires": [
+            {
+              "id": "musician-2-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "musician-2-3",
+          "name": "出版音樂專輯",
+          "desc": "規劃母帶、版權與作品發行。",
+          "task": "完成一份三首歌的發行計畫。",
+          "stage": 3,
+          "row": 2,
+          "requires": [
+            {
+              "id": "musician-2-2",
+              "level": 4
+            },
+            {
+              "id": "musician-0-2",
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "animator",
+      "name": "動畫師",
+      "icon": "🎞️",
+      "color": "#f09fbb",
+      "desc": "以造型、動作、鏡頭與製作流程創造能呼吸的影像。",
+      "attribute": "創造力",
+      "ranks": [
+        "塗鴉探索者",
+        "造型練習生",
+        "動態畫師",
+        "分鏡動畫師",
+        "角色動畫專家",
+        "動畫監督",
+        "視覺敘事總監",
+        "影像宗師",
+        "造夢主宰"
+      ],
+      "branches": [
+        "視覺造型",
+        "動作與敘事",
+        "數位製作"
+      ],
+      "skills": [
+        {
+          "id": "animator-0-0",
+          "name": "速寫與人體",
+          "desc": "掌握比例、動勢線與基本形體。",
+          "task": "完成 20 張 1 分鐘動勢速寫。",
+          "stage": 0,
+          "row": 0,
+          "requires": []
+        },
+        {
+          "id": "animator-0-1",
+          "name": "透視與場景",
+          "desc": "建立建築空間、光源與構圖秩序。",
+          "task": "畫一張雙消失點建築場景。",
+          "stage": 1,
+          "row": 0,
+          "requires": [
+            {
+              "id": "animator-0-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "animator-0-2",
+          "name": "角色與機械設定",
+          "desc": "整合剪影、機構語彙與造型一致性。",
+          "task": "完成角色或機械三視圖設定。",
+          "stage": 2,
+          "row": 0,
+          "requires": [
+            {
+              "id": "animator-0-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "animator-0-3",
+          "name": "美術世界觀",
+          "desc": "建立場景、角色與色彩的系統化視覺聖經。",
+          "task": "製作含角色與場景的視覺設定集。",
+          "stage": 3,
+          "row": 0,
+          "requires": [
+            {
+              "id": "animator-0-2",
+              "level": 4
+            },
+            {
+              "id": "animator-1-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "animator-1-0",
+          "name": "動畫十二法則",
+          "desc": "理解擠壓伸展、預備與跟隨動作。",
+          "task": "做一個有重量感的彈跳球動畫。",
+          "stage": 0,
+          "row": 1,
+          "requires": []
+        },
+        {
+          "id": "animator-1-1",
+          "name": "角色表演",
+          "desc": "設計表情、節奏與角色意圖。",
+          "task": "製作十秒角色情緒轉換。",
+          "stage": 1,
+          "row": 1,
+          "requires": [
+            {
+              "id": "animator-1-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "animator-1-2",
+          "name": "故事分鏡",
+          "desc": "串接鏡頭、場面調度和情緒節點。",
+          "task": "畫出 20 格有清楚敘事的分鏡。",
+          "stage": 2,
+          "row": 1,
+          "requires": [
+            {
+              "id": "animator-1-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "animator-1-3",
+          "name": "短片導演",
+          "desc": "掌控節奏、場景切換與主題表達。",
+          "task": "完成一支有起承轉合的一分鐘短片。",
+          "stage": 3,
+          "row": 1,
+          "requires": [
+            {
+              "id": "animator-1-2",
+              "level": 4
+            },
+            {
+              "id": "animator-2-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "animator-2-0",
+          "name": "2D製作軟體",
+          "desc": "掌握圖層、時間軸與輸出管理。",
+          "task": "用動畫軟體製作一段 24 格循環。",
+          "stage": 0,
+          "row": 2,
+          "requires": []
+        },
+        {
+          "id": "animator-2-1",
+          "name": "3D造型與綁定",
+          "desc": "建立模型拓撲、骨架與關節限制。",
+          "task": "完成一個可做簡單動作的角色綁定。",
+          "stage": 1,
+          "row": 2,
+          "requires": [
+            {
+              "id": "animator-2-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "animator-2-2",
+          "name": "合成與特效",
+          "desc": "管理光影、粒子與後期畫面一致性。",
+          "task": "為片段完成分層合成與色彩調整。",
+          "stage": 2,
+          "row": 2,
+          "requires": [
+            {
+              "id": "animator-2-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "animator-2-3",
+          "name": "製片管線管理",
+          "desc": "整合資產命名、版本與跨工種協作。",
+          "task": "寫一份短片製作規格與時程表。",
+          "stage": 3,
+          "row": 2,
+          "requires": [
+            {
+              "id": "animator-2-2",
+              "level": 4
+            },
+            {
+              "id": "animator-0-2",
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chef",
+      "name": "廚師",
+      "icon": "🍳",
+      "color": "#f7be70",
+      "desc": "以食材理解、火候控制和美學設計提供能被感受的作品。",
+      "attribute": "生命力",
+      "ranks": [
+        "廚房見習生",
+        "家常料理手",
+        "熟練料理人",
+        "創意主廚",
+        "專業廚藝師",
+        "料理研發主廚",
+        "餐飲概念總監",
+        "味覺宗師",
+        "百味創造者"
+      ],
+      "branches": [
+        "料理科學",
+        "廚房實作",
+        "味覺與創作"
+      ],
+      "skills": [
+        {
+          "id": "chef-0-0",
+          "name": "刀工與食材",
+          "desc": "認識刀法、保存與食材組織。",
+          "task": "完成三種一致尺寸的切工練習。",
+          "stage": 0,
+          "row": 0,
+          "requires": []
+        },
+        {
+          "id": "chef-0-1",
+          "name": "火候與熟度",
+          "desc": "掌握煎、炒、烤、燉的熱控制。",
+          "task": "同一食材用兩種火候做差異比較。",
+          "stage": 1,
+          "row": 0,
+          "requires": [
+            {
+              "id": "chef-0-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "chef-0-2",
+          "name": "食物化學",
+          "desc": "理解乳化、梅納反應與澱粉糊化。",
+          "task": "記錄一次配方變因實驗。",
+          "stage": 2,
+          "row": 0,
+          "requires": [
+            {
+              "id": "chef-0-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "chef-0-3",
+          "name": "菜單研發",
+          "desc": "整合成本、營養、流程與季節性。",
+          "task": "設計一套含成本表的三道式菜單。",
+          "stage": 3,
+          "row": 0,
+          "requires": [
+            {
+              "id": "chef-0-2",
+              "level": 4
+            },
+            {
+              "id": "chef-1-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "chef-1-0",
+          "name": "衛生與備料",
+          "desc": "建立安全溫度、交叉污染與 mise en place 概念。",
+          "task": "完成一份料理前後衛生檢核。",
+          "stage": 0,
+          "row": 1,
+          "requires": []
+        },
+        {
+          "id": "chef-1-1",
+          "name": "醬汁與湯底",
+          "desc": "建立鮮味、濃稠度與風味層次。",
+          "task": "煮一款湯底並記錄調味比例。",
+          "stage": 1,
+          "row": 1,
+          "requires": [
+            {
+              "id": "chef-1-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "chef-1-2",
+          "name": "跨菜系料理",
+          "desc": "比較亞洲、歐洲等料理技法。",
+          "task": "重製一道陌生菜系經典菜。",
+          "stage": 2,
+          "row": 1,
+          "requires": [
+            {
+              "id": "chef-1-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "chef-1-3",
+          "name": "宴席執行",
+          "desc": "控制多道料理的出餐節點與品質。",
+          "task": "安排一餐四道菜同步上桌。",
+          "stage": 3,
+          "row": 1,
+          "requires": [
+            {
+              "id": "chef-1-2",
+              "level": 4
+            },
+            {
+              "id": "chef-2-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "chef-2-0",
+          "name": "感官辨識",
+          "desc": "練習酸甜苦鹹鮮與口感辨識。",
+          "task": "完成一份盲測味覺筆記。",
+          "stage": 0,
+          "row": 2,
+          "requires": []
+        },
+        {
+          "id": "chef-2-1",
+          "name": "擺盤與色彩",
+          "desc": "利用空間、色彩和層次傳達概念。",
+          "task": "為同一道菜完成兩種不同擺盤。",
+          "stage": 1,
+          "row": 2,
+          "requires": [
+            {
+              "id": "chef-2-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "chef-2-2",
+          "name": "甜點與烘焙",
+          "desc": "掌握精度、發酵與穩定性控制。",
+          "task": "完成一次配方倍率實驗。",
+          "stage": 2,
+          "row": 2,
+          "requires": [
+            {
+              "id": "chef-2-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "chef-2-3",
+          "name": "招牌料理",
+          "desc": "把地域、故事與個人風格融入餐點。",
+          "task": "設計一道有完整食譜的個人招牌菜。",
+          "stage": 3,
+          "row": 2,
+          "requires": [
+            {
+              "id": "chef-2-2",
+              "level": 4
+            },
+            {
+              "id": "chef-0-2",
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ceo",
+      "name": "總裁／經營者",
+      "icon": "👑",
+      "color": "#eec66a",
+      "desc": "從策略、財務、組織到治理，建立可持續運作的事業。",
+      "attribute": "統御力",
+      "ranks": [
+        "創業探索者",
+        "專案負責人",
+        "團隊管理者",
+        "營運主管",
+        "事業部領導人",
+        "創辦人／CEO",
+        "集團策略總監",
+        "商業領袖",
+        "帝國構築者"
+      ],
+      "branches": [
+        "商業策略",
+        "組織領導",
+        "談判與治理"
+      ],
+      "skills": [
+        {
+          "id": "ceo-0-0",
+          "name": "產業分析",
+          "desc": "辨識產業結構、客群與競爭對手。",
+          "task": "撰寫一頁競爭對手與市場地圖。",
+          "stage": 0,
+          "row": 0,
+          "requires": []
+        },
+        {
+          "id": "ceo-0-1",
+          "name": "商業模式",
+          "desc": "分析價值主張、收入與獲客路徑。",
+          "task": "完成一份商業模式畫布。",
+          "stage": 1,
+          "row": 0,
+          "requires": [
+            {
+              "id": "ceo-0-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "ceo-0-2",
+          "name": "單位經濟學",
+          "desc": "掌握毛利、CAC、LTV 和現金循環。",
+          "task": "計算一個模擬產品的損益平衡點。",
+          "stage": 2,
+          "row": 0,
+          "requires": [
+            {
+              "id": "ceo-0-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "ceo-0-3",
+          "name": "事業投資組合",
+          "desc": "配置產品線與成長資源。",
+          "task": "寫一份三年業務組合計畫。",
+          "stage": 3,
+          "row": 0,
+          "requires": [
+            {
+              "id": "ceo-0-2",
+              "level": 4
+            },
+            {
+              "id": "ceo-1-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "ceo-1-0",
+          "name": "專案管理",
+          "desc": "掌握範疇、時程、成本及風險。",
+          "task": "完成一份有里程碑的專案看板。",
+          "stage": 0,
+          "row": 1,
+          "requires": []
+        },
+        {
+          "id": "ceo-1-1",
+          "name": "授權與回饋",
+          "desc": "建立權責清楚的合作機制。",
+          "task": "針對模擬團隊寫一份 RACI 表。",
+          "stage": 1,
+          "row": 1,
+          "requires": [
+            {
+              "id": "ceo-1-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "ceo-1-2",
+          "name": "人才與文化",
+          "desc": "設計招募、人才發展和激勵機制。",
+          "task": "撰寫職位能力模型與面試題庫。",
+          "stage": 2,
+          "row": 1,
+          "requires": [
+            {
+              "id": "ceo-1-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "ceo-1-3",
+          "name": "組織制度設計",
+          "desc": "使管理系統不依賴單一領導者。",
+          "task": "設計一份公司營運 SOP 架構。",
+          "stage": 3,
+          "row": 1,
+          "requires": [
+            {
+              "id": "ceo-1-2",
+              "level": 4
+            },
+            {
+              "id": "ceo-2-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "ceo-2-0",
+          "name": "商務溝通",
+          "desc": "釐清利害關係人與提案價值。",
+          "task": "練習一份五分鐘提案。",
+          "stage": 0,
+          "row": 2,
+          "requires": []
+        },
+        {
+          "id": "ceo-2-1",
+          "name": "談判與合約",
+          "desc": "掌握談判籌碼、條款與風險配置。",
+          "task": "針對案例提出三套談判方案。",
+          "stage": 1,
+          "row": 2,
+          "requires": [
+            {
+              "id": "ceo-2-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "ceo-2-2",
+          "name": "財務與融資",
+          "desc": "理解現金流、資本配置與財報。",
+          "task": "分析一家公司的三大財務報表。",
+          "stage": 2,
+          "row": 2,
+          "requires": [
+            {
+              "id": "ceo-2-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "ceo-2-3",
+          "name": "治理與法遵",
+          "desc": "建立透明、可問責的風險管理。",
+          "task": "完成一份企業風險矩陣。",
+          "stage": 3,
+          "row": 2,
+          "requires": [
+            {
+              "id": "ceo-2-2",
+              "level": 4
+            },
+            {
+              "id": "ceo-0-2",
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lecturer",
+      "name": "講師",
+      "icon": "🎓",
+      "color": "#8dcaed",
+      "desc": "把複雜知識整理成清晰、有轉移效果的學習體驗。",
+      "attribute": "統御力",
+      "ranks": [
+        "知識整理者",
+        "助教",
+        "主題講者",
+        "專業講師",
+        "課程設計師",
+        "資深培訓顧問",
+        "教育產品總監",
+        "教學宗師",
+        "啟智領航者"
+      ],
+      "branches": [
+        "教學設計",
+        "表達與說服",
+        "教學產品化"
+      ],
+      "skills": [
+        {
+          "id": "lecturer-0-0",
+          "name": "學習目標",
+          "desc": "將抽象主題轉換成可驗證的學習目標。",
+          "task": "為一堂課寫三個可評量的目標。",
+          "stage": 0,
+          "row": 0,
+          "requires": []
+        },
+        {
+          "id": "lecturer-0-1",
+          "name": "課程結構",
+          "desc": "拆分難度、範例和先修關係。",
+          "task": "規劃一份九十分鐘教案。",
+          "stage": 1,
+          "row": 0,
+          "requires": [
+            {
+              "id": "lecturer-0-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "lecturer-0-2",
+          "name": "測驗與回饋",
+          "desc": "設計有效評量和回饋機制。",
+          "task": "製作含評分規準的十題測驗。",
+          "stage": 2,
+          "row": 0,
+          "requires": [
+            {
+              "id": "lecturer-0-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "lecturer-0-3",
+          "name": "系列課綱設計",
+          "desc": "安排跨週進度與能力轉移。",
+          "task": "完成八週完整培訓課綱。",
+          "stage": 3,
+          "row": 0,
+          "requires": [
+            {
+              "id": "lecturer-0-2",
+              "level": 4
+            },
+            {
+              "id": "lecturer-1-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "lecturer-1-0",
+          "name": "口語結構",
+          "desc": "建立清楚的開頭、論點與收束。",
+          "task": "錄下三分鐘無逐字稿演說。",
+          "stage": 0,
+          "row": 1,
+          "requires": []
+        },
+        {
+          "id": "lecturer-1-1",
+          "name": "案例與故事",
+          "desc": "透過具體例子讓抽象概念容易理解。",
+          "task": "用一則生活故事解釋專業概念。",
+          "stage": 1,
+          "row": 1,
+          "requires": [
+            {
+              "id": "lecturer-1-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "lecturer-1-2",
+          "name": "提問與互動",
+          "desc": "處理難題、提問與現場節奏。",
+          "task": "模擬回答五個尖銳提問。",
+          "stage": 2,
+          "row": 1,
+          "requires": [
+            {
+              "id": "lecturer-1-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "lecturer-1-3",
+          "name": "大型舞台授課",
+          "desc": "管理觀眾注意力和複雜互動。",
+          "task": "完成一次三十分鐘完整授課演練。",
+          "stage": 3,
+          "row": 1,
+          "requires": [
+            {
+              "id": "lecturer-1-2",
+              "level": 4
+            },
+            {
+              "id": "lecturer-2-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "lecturer-2-0",
+          "name": "教材視覺設計",
+          "desc": "用圖像與編排減輕認知負荷。",
+          "task": "完成十張簡明教學投影片。",
+          "stage": 0,
+          "row": 2,
+          "requires": []
+        },
+        {
+          "id": "lecturer-2-1",
+          "name": "工作坊引導",
+          "desc": "讓學員透過實作達成目標。",
+          "task": "設計一個可團隊完成的工作坊。",
+          "stage": 1,
+          "row": 2,
+          "requires": [
+            {
+              "id": "lecturer-2-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "lecturer-2-2",
+          "name": "教學成效分析",
+          "desc": "運用回饋改善學習成效。",
+          "task": "分析一組課後問卷並提出改善。",
+          "stage": 2,
+          "row": 2,
+          "requires": [
+            {
+              "id": "lecturer-2-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "lecturer-2-3",
+          "name": "線上學習平台",
+          "desc": "規劃可持續更新的數位課程。",
+          "task": "錄製一堂有講義與作業的線上課。",
+          "stage": 3,
+          "row": 2,
+          "requires": [
+            {
+              "id": "lecturer-2-2",
+              "level": 4
+            },
+            {
+              "id": "lecturer-0-2",
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "athlete",
+      "name": "運動家",
+      "icon": "🏃",
+      "color": "#94d0ad",
+      "desc": "建立耐力、力量、技術與恢復之間可長期維持的平衡。",
+      "attribute": "生命力",
+      "ranks": [
+        "初階活動者",
+        "規律訓練者",
+        "基礎體能者",
+        "耐力挑戰者",
+        "進階運動員",
+        "全能體能選手",
+        "專項競技強者",
+        "身體鍛鍊宗師",
+        "武神之軀"
+      ],
+      "branches": [
+        "體能基礎",
+        "動作表現",
+        "恢復科學"
+      ],
+      "skills": [
+        {
+          "id": "athlete-0-0",
+          "name": "活動度與姿勢",
+          "desc": "了解關節活動範圍和動作控制。",
+          "task": "完成一組活動度與姿勢觀察記錄。",
+          "stage": 0,
+          "row": 0,
+          "requires": []
+        },
+        {
+          "id": "athlete-0-1",
+          "name": "有氧耐力",
+          "desc": "用可交談配速建立基礎耐力。",
+          "task": "完成一次按自身狀況調整的有氧訓練。",
+          "stage": 1,
+          "row": 0,
+          "requires": [
+            {
+              "id": "athlete-0-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "athlete-0-2",
+          "name": "肌力週期",
+          "desc": "掌握負荷、漸進超負荷和技術。",
+          "task": "設計四週漸進式肌力課表。",
+          "stage": 2,
+          "row": 0,
+          "requires": [
+            {
+              "id": "athlete-0-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "athlete-0-3",
+          "name": "週期化訓練",
+          "desc": "整合強度、容量和減量週。",
+          "task": "規劃八週訓練與恢復週期。",
+          "stage": 3,
+          "row": 0,
+          "requires": [
+            {
+              "id": "athlete-0-2",
+              "level": 4
+            },
+            {
+              "id": "athlete-1-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "athlete-1-0",
+          "name": "基礎動作模式",
+          "desc": "練習蹲、推、拉、髖鉸鏈的動作質量。",
+          "task": "錄影檢查兩項動作的關鍵姿勢。",
+          "stage": 0,
+          "row": 1,
+          "requires": []
+        },
+        {
+          "id": "athlete-1-1",
+          "name": "跑步技術",
+          "desc": "觀察步頻、配速、跑姿與安全進階。",
+          "task": "記錄一次含路況與主觀強度的跑步。",
+          "stage": 1,
+          "row": 1,
+          "requires": [
+            {
+              "id": "athlete-1-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "athlete-1-2",
+          "name": "協調與平衡",
+          "desc": "改善控制、反應與單側穩定。",
+          "task": "完成十五分鐘平衡協調訓練。",
+          "stage": 2,
+          "row": 1,
+          "requires": [
+            {
+              "id": "athlete-1-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "athlete-1-3",
+          "name": "長距離挑戰",
+          "desc": "依能力規劃長程耐力與補給策略。",
+          "task": "制定一次有安全退場條件的挑戰計畫。",
+          "stage": 3,
+          "row": 1,
+          "requires": [
+            {
+              "id": "athlete-1-2",
+              "level": 4
+            },
+            {
+              "id": "athlete-2-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "athlete-2-0",
+          "name": "睡眠與呼吸",
+          "desc": "管理睡眠品質與呼吸練習。",
+          "task": "記錄三天睡眠與醒後精神。",
+          "stage": 0,
+          "row": 2,
+          "requires": []
+        },
+        {
+          "id": "athlete-2-1",
+          "name": "營養與補水",
+          "desc": "依訓練量安排足夠能量與水分。",
+          "task": "完成一份運動日補給紀錄。",
+          "stage": 1,
+          "row": 2,
+          "requires": [
+            {
+              "id": "athlete-2-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "athlete-2-2",
+          "name": "負荷監控",
+          "desc": "追蹤 RPE、疲勞與恢復趨勢。",
+          "task": "記錄一週訓練量與疲勞指標。",
+          "stage": 2,
+          "row": 2,
+          "requires": [
+            {
+              "id": "athlete-2-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "athlete-2-3",
+          "name": "長期競技健康",
+          "desc": "兼顧傷害預防、表現與生活。",
+          "task": "建立一份可執行的年度訓練原則。",
+          "stage": 3,
+          "row": 2,
+          "requires": [
+            {
+              "id": "athlete-2-2",
+              "level": 4
+            },
+            {
+              "id": "athlete-0-2",
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cultivation",
+      "name": "修行者",
+      "icon": "☯️",
+      "color": "#b1b3e2",
+      "desc": "練習自我觀照、價值實踐與內在秩序，不以神秘化取代行動。",
+      "attribute": "內觀力",
+      "ranks": [
+        "自省者",
+        "靜心練習者",
+        "秩序修習者",
+        "意志鍛造者",
+        "心性實踐者",
+        "明辨修道者",
+        "自律宗師",
+        "自在行者",
+        "無拘之境"
+      ],
+      "branches": [
+        "身心覺察",
+        "品格與紀律",
+        "哲學與實踐"
+      ],
+      "skills": [
+        {
+          "id": "cultivation-0-0",
+          "name": "呼吸觀察",
+          "desc": "練習感受呼吸，不急著控制念頭。",
+          "task": "進行五分鐘呼吸觀察並記錄感受。",
+          "stage": 0,
+          "row": 0,
+          "requires": []
+        },
+        {
+          "id": "cultivation-0-1",
+          "name": "注意力管理",
+          "desc": "辨認分心來源與回到當下的方法。",
+          "task": "完成十五分鐘專注練習。",
+          "stage": 1,
+          "row": 0,
+          "requires": [
+            {
+              "id": "cultivation-0-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "cultivation-0-2",
+          "name": "情緒辨識",
+          "desc": "將情緒、想法與行動區分開。",
+          "task": "寫下事件、情緒與替代反應。",
+          "stage": 2,
+          "row": 0,
+          "requires": [
+            {
+              "id": "cultivation-0-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "cultivation-0-3",
+          "name": "逆境中的平衡",
+          "desc": "在不確定中維持清晰與彈性。",
+          "task": "記錄一次不衝動反應的真實情境。",
+          "stage": 3,
+          "row": 0,
+          "requires": [
+            {
+              "id": "cultivation-0-2",
+              "level": 4
+            },
+            {
+              "id": "cultivation-1-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "cultivation-1-0",
+          "name": "每日自律",
+          "desc": "建立小而可持續的承諾。",
+          "task": "連續一天按計畫完成一項小習慣。",
+          "stage": 0,
+          "row": 1,
+          "requires": []
+        },
+        {
+          "id": "cultivation-1-1",
+          "name": "欲望與節制",
+          "desc": "辨識衝動消費或拖延的觸發點。",
+          "task": "記錄一次延遲滿足的決定。",
+          "stage": 1,
+          "row": 1,
+          "requires": [
+            {
+              "id": "cultivation-1-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "cultivation-1-2",
+          "name": "同理與界限",
+          "desc": "兼顧善意、尊重和個人界限。",
+          "task": "分析一場人際互動中的需求與界線。",
+          "stage": 2,
+          "row": 1,
+          "requires": [
+            {
+              "id": "cultivation-1-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "cultivation-1-3",
+          "name": "價值一致性",
+          "desc": "使決策與長期價值觀相互一致。",
+          "task": "撰寫一份三項不可妥協原則。",
+          "stage": 3,
+          "row": 1,
+          "requires": [
+            {
+              "id": "cultivation-1-2",
+              "level": 4
+            },
+            {
+              "id": "cultivation-2-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "cultivation-2-0",
+          "name": "邏輯思辨",
+          "desc": "辨識論證、偏誤與推論缺口。",
+          "task": "分析一篇文章的論證結構。",
+          "stage": 0,
+          "row": 2,
+          "requires": []
+        },
+        {
+          "id": "cultivation-2-1",
+          "name": "經典閱讀",
+          "desc": "比較不同思想體系的假設與限制。",
+          "task": "寫一頁經典閱讀心得。",
+          "stage": 1,
+          "row": 2,
+          "requires": [
+            {
+              "id": "cultivation-2-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "cultivation-2-2",
+          "name": "世界觀整合",
+          "desc": "建立可修正而不僵化的思想框架。",
+          "task": "畫出你的價值觀與行動因果圖。",
+          "stage": 2,
+          "row": 2,
+          "requires": [
+            {
+              "id": "cultivation-2-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "cultivation-2-3",
+          "name": "知行合一",
+          "desc": "把理念變成可追蹤的生活設計。",
+          "task": "完成一份季度反思與改進清單。",
+          "stage": 3,
+          "row": 2,
+          "requires": [
+            {
+              "id": "cultivation-2-2",
+              "level": 4
+            },
+            {
+              "id": "cultivation-0-2",
+              "level": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "divination",
+      "name": "命理研究者",
+      "icon": "🔮",
+      "color": "#d7a1dc",
+      "desc": "研究象徵系統、文本與詮釋技巧，兼顧不確定性及諮詢倫理。",
+      "attribute": "內觀力",
+      "ranks": [
+        "符號觀察者",
+        "命理初學者",
+        "象數解讀者",
+        "命盤研究者",
+        "跨流派研習者",
+        "命理詮釋師",
+        "象數研究專家",
+        "命理學術宗師",
+        "萬象觀測者"
+      ],
+      "branches": [
+        "東方命理",
+        "占星與天象",
+        "占卜與倫理"
+      ],
+      "skills": [
+        {
+          "id": "divination-0-0",
+          "name": "陰陽五行",
+          "desc": "理解五行生剋、天干地支與基本架構。",
+          "task": "做一份天干地支與五行對照筆記。",
+          "stage": 0,
+          "row": 0,
+          "requires": []
+        },
+        {
+          "id": "divination-0-1",
+          "name": "四柱八字",
+          "desc": "練習排列四柱與辨認十神。",
+          "task": "完成一張案例八字結構分析。",
+          "stage": 1,
+          "row": 0,
+          "requires": [
+            {
+              "id": "divination-0-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "divination-0-2",
+          "name": "紫微斗數",
+          "desc": "學習星曜、宮位與四化的詮釋方法。",
+          "task": "整理十二宮與主星的關係圖。",
+          "stage": 2,
+          "row": 0,
+          "requires": [
+            {
+              "id": "divination-0-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "divination-0-3",
+          "name": "跨系統比較",
+          "desc": "辨認各命理流派的前提與相容程度。",
+          "task": "比較同一案例在兩套體系下的觀點。",
+          "stage": 3,
+          "row": 0,
+          "requires": [
+            {
+              "id": "divination-0-2",
+              "level": 4
+            },
+            {
+              "id": "divination-1-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "divination-1-0",
+          "name": "西洋占星基礎",
+          "desc": "認識行星、星座、宮位的象徵意義。",
+          "task": "製作十二星座與十大行星筆記。",
+          "stage": 0,
+          "row": 1,
+          "requires": []
+        },
+        {
+          "id": "divination-1-1",
+          "name": "相位與宮主星",
+          "desc": "將相位與宮位語彙組成一致的解讀。",
+          "task": "挑選三組相位練習描述。",
+          "stage": 1,
+          "row": 1,
+          "requires": [
+            {
+              "id": "divination-1-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "divination-1-2",
+          "name": "推運與流年",
+          "desc": "了解推運、行運的傳統使用框架。",
+          "task": "比較兩種流年詮釋方式與限制。",
+          "stage": 2,
+          "row": 1,
+          "requires": [
+            {
+              "id": "divination-1-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "divination-1-3",
+          "name": "占星研究方法",
+          "desc": "區分象徵性解讀與可驗證的預測。",
+          "task": "寫一份避免事後偏誤的案例研究表。",
+          "stage": 3,
+          "row": 1,
+          "requires": [
+            {
+              "id": "divination-1-2",
+              "level": 4
+            },
+            {
+              "id": "divination-2-2",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "divination-2-0",
+          "name": "易經與塔羅",
+          "desc": "建立六十四卦與塔羅牌象徵對照基礎。",
+          "task": "寫一則卦象或牌面的文本解讀。",
+          "stage": 0,
+          "row": 2,
+          "requires": []
+        },
+        {
+          "id": "divination-2-1",
+          "name": "提問與敘事",
+          "desc": "把模糊問題轉換成有意義的反思。",
+          "task": "將五個問題改寫成開放式提問。",
+          "stage": 1,
+          "row": 2,
+          "requires": [
+            {
+              "id": "divination-2-0",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "divination-2-2",
+          "name": "不確定性表達",
+          "desc": "學會避免武斷預言和確認偏誤。",
+          "task": "重寫一段過度確定的解讀。",
+          "stage": 2,
+          "row": 2,
+          "requires": [
+            {
+              "id": "divination-2-1",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "id": "divination-2-3",
+          "name": "負責任的諮詢",
+          "desc": "維護尊重、界限、隱私與自主決策。",
+          "task": "設計一份不涉及醫療財務斷言的諮詢守則。",
+          "stage": 3,
+          "row": 2,
+          "requires": [
+            {
+              "id": "divination-2-2",
+              "level": 4
+            },
+            {
+              "id": "divination-0-2",
+              "level": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
